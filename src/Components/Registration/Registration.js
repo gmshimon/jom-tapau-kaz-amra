@@ -1,6 +1,6 @@
-import React from "react";
-import { Button, Form } from "react-bootstrap";
-import "./Registration.css";
+import React from 'react'
+import { Button, Form } from 'react-bootstrap'
+import './Registration.css'
 const Registration = () => {
   return (
     <div className="d-lg-flex   registration-div">
@@ -48,7 +48,7 @@ const Registration = () => {
       </section>
 
     </div>
-  );
-};
+  )
+}
 
-export default Registration;
+export default Registration
