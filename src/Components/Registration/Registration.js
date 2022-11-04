@@ -10,17 +10,17 @@ const Registration = () => {
       </section>
 
 
- <section className=" w-50 mx-auto px-lg-5  ">
+ <section className=" w-75 mx-auto px-lg-5  ">
         <Form className="w-100 ">
           <h1 className="text-danger mt-5">Please Register</h1>
-          <Form.Group className="mb-3 " controlId="formBasicEmail">
+          <Form.Group className="mb-3 " >
             <Form.Label>Phone Number</Form.Label>
             <Form.Control className="w-75" type="phone" placeholder="Phone Number" />
             <Form.Text className="text-muted">
             
             </Form.Text>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" >
             <Form.Label>Name</Form.Label>
             <Form.Control className="w-75" type="name" placeholder="Enter FullName" />
             <Form.Text className="text-muted">
