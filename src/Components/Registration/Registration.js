@@ -20,9 +20,8 @@ const Registration = () => {
           </Form.Group>
           <Form.Group className="mb-3 w-75 mx-auto " >
             <Form.Label>Name</Form.Label>
-            <Form.Control  type="name" placeholder="Enter FullName" />
+            <Form.Control  type="name" placeholder="Enter Full Name" />
             <Form.Text className="text-muted">
-             
             </Form.Text>
           </Form.Group>
           <Form.Group className="mb-3 w-75 mx-auto " controlId="formBasicEmail">
