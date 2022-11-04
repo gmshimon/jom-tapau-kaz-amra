@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import Registration from './Components/Registration/Registration';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/registration" element={<Registration></Registration>}></Route>
       </Routes>
     </div>
   );
