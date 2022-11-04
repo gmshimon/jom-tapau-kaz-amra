@@ -6,7 +6,7 @@ const Registration = () => {
     <div className="d-lg-flex body-reg   registration-div">
       <section className=" w-lg-50">
      
-          <img className=" w-100 h-100" src="https://i.ibb.co/DDDDhqG/IMG-9324.jpg" alt="" />
+          <img className=" w-100 h-100" src="https://i.ibb.co/Dg3F3FV/IMG-9325.jpg" alt="" />
       </section>
 
 
