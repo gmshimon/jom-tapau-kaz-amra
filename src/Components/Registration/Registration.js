@@ -38,7 +38,7 @@ const Registration = () => {
         
           <div className='d-flex  justify-content-center'>
           <Button className="mb-5" variant="danger" type="submit">
-            Submit
+            Submit.
           </Button>
           </div>
 
