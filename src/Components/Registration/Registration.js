@@ -21,9 +21,9 @@ const Registration = () => {
             <span style={{'--i':1}} className='animate shadow-red text-white'>J</span>
             <span style={{'--i':2}} className='animate shadow-white text-danger'>om</span>
             {/* <small></small> */}
-            <span yle={{'--i':3}} className='animate shadow-red text-white'>Ta</span>
-            <span yle={{'--i':4}} className='animate shadow-white text-danger'>pa</span>
-            <span yle={{'--i':5}} className='animate shadow-red text-white'>u</span>
+            <span style={{'--i':3}} className='animate shadow-red text-white'>Ta</span>
+            <span style={{'--i':4}} className='animate shadow-white text-danger'>pa</span>
+            <span style={{'--i':5}} className='animate shadow-red text-white'>u</span>
           </h1>
           <div className='d-flex justify-content-center'>
             <div>

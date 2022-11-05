@@ -17,11 +17,11 @@ const Login = () => {
             <span style={{'--i':1}} className='shadow-red text-white'>J</span>
             <span style={{'--i':2}} className='shadow-white text-danger'>om</span>
             <small></small>
-            <span yle={{'--i':3}} className='shadow-red text-white'>Ta</span>
-            <span yle={{'--i':4}} className='shadow-white text-danger'>pa</span>
-            <span yle={{'--i':5}} className='shadow-red text-white'>u</span>
+            <span style={{'--i':3}} className='shadow-red text-white'>Ta</span>
+            <span style={{'--i':4}} className='shadow-white text-danger'>pa</span>
+            <span style={{'--i':5}} className='shadow-red text-white'>u</span>
           </h1>
-          <div yle={{'--i':6}} className='d-flex justify-content-center'>
+          <div style={{'--i':6}} className='d-flex justify-content-center'>
             <div>
             <p className='text-center mt-5 fs-3'>Fill out the Form to login</p>
             <hr style={{width:'400px',color:'green',border:'2px solid green'}}/>
