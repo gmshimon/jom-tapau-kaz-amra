@@ -6,11 +6,13 @@ const Header = () => {
     <div>
       <Navbar bg='danger' variant='dark'>
         <Container>
-          <Navbar.Brand href='#home'>Jom Tapau</Navbar.Brand>
-          <Nav className='me-auto'>
-            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/login">Login</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
+          <Nav>
+          <Navbar.Brand as={Link} to="/home">Jom Tapau</Navbar.Brand>
+            <Nav.Link className='text-white' as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link className='text-white' as={Link} to="/about">About</Nav.Link>
+          </Nav>
+          <Nav className=''>
+            <Nav.Link className='text-white' as={Link} to="/login">Login</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
