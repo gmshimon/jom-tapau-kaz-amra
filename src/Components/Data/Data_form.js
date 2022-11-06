@@ -1,20 +1,49 @@
 import React from 'react'
+import { useRef } from 'react';
 
 const Data_form = () => {
-    const HandleAdd = () =>{
-        console.log('Hello world');
+  const nameRef = useRef();
+  const priceRef =useRef();
+  const imgRef =useRef();
+  const catRef =useRef();
+    const HandleAdd = e =>{
+    
+       e.preventDefault();
+       const name = nameRef.current.value;
+       const price= priceRef.current.value;
+       const imgURL= imgRef.current.value;
+       const category= catRef.current.value;
+
+       const foodCollection={
+        name, price,imgURL,category
+       }
+
+       fetch('http://localhost:5000/food', {
+
+        method: "POST",
+        headers: {
+          "content-type": "application/json"
+
+        },
+        body: JSON.stringify(foodCollection)
+
+       }).then(res=>res.json()).then(data=>{
+        console.log("this is data mind it",data);
+       })
+
+     
     }
   return (
     <div>
       <h1>Data insertion form for Jom Tapau</h1>
-      <form style={{ marginTop: '50px', marginLeft: '100px' }}>
+      <form onSubmit={HandleAdd} style={{ marginTop: '50px', marginLeft: '100px' }}>
         <table>
           <tr>
             <td align='right'>
               <label for='foodName'>Food Name:</label>
             </td>
             <td>
-              <input
+              <input ref={nameRef}
                 style={{ width: '300px' }}
                 type='text'
                 name='foodName'
@@ -26,7 +55,7 @@ const Data_form = () => {
               <label for='price'>Price</label>
             </td>
             <td>
-              <input
+              <input ref={priceRef}
                 style={{ width: '300px' }}
                 type='text'
                 name='price'
@@ -38,7 +67,7 @@ const Data_form = () => {
               <label for='image'>Image URL</label>
             </td>
             <td>
-              <input
+              <input ref={imgRef}
                 style={{ width: '300px' }}
                 type='text'
                 name='image'
@@ -50,11 +79,12 @@ const Data_form = () => {
               <label for='category'>Category</label>
             </td>
             <td>
-              <input
-                style={{ width: '300px' }}
-                type='text'
-                name='category'
-              />
+           
+              <select ref={catRef}  style={{width:"300px"}} name="Category" id="">
+                <option value="Lunch">Lunch</option>
+                <option value="BreakFast">BreakFast</option>
+                <option value="Drinks">Drinks</option>
+              </select>
             </td>
           </tr>
         </table>
