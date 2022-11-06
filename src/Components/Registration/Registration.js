@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button, Form } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import './Registration.css'
 const Registration = () => {
   return (
-    <div style={{ backgroundColor: 'rgba(117, 131, 136, 0.2)' }}>
+    <div style={{ backgroundColor: 'rgba(117, 131, 136, 0.2'}}>
       <div className='d-lg-flex body-reg   registration-div'>
         <section className=' w-lg-50'>
           <img
@@ -99,7 +99,7 @@ const Registration = () => {
         </section>
       </div>
     </div>
-  )
+  );
 }
 
-export default Registration
+export default Registration;
