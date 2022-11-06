@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Data_form = () => {
+    const HandleAdd = () =>{
+        console.log('Hello world');
+    }
   return (
     <div>
       <h1>Data insertion form for Jom Tapau</h1>
@@ -15,7 +18,6 @@ const Data_form = () => {
                 style={{ width: '300px' }}
                 type='text'
                 name='foodName'
-                value=''
               />
             </td>
           </tr>
@@ -27,8 +29,7 @@ const Data_form = () => {
               <input
                 style={{ width: '300px' }}
                 type='text'
-                name='foodName'
-                value=''
+                name='price'
               />
             </td>
           </tr>
@@ -41,7 +42,6 @@ const Data_form = () => {
                 style={{ width: '300px' }}
                 type='text'
                 name='image'
-                value=''
               />
             </td>
           </tr>
@@ -54,13 +54,12 @@ const Data_form = () => {
                 style={{ width: '300px' }}
                 type='text'
                 name='category'
-                value=''
               />
             </td>
           </tr>
         </table>
         <br/>
-        <button>Add Food</button>
+        <button onClick={HandleAdd}>Add Food</button>
       </form>
     </div>
   )
