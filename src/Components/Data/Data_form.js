@@ -29,6 +29,8 @@ const Data_form = () => {
 
        }).then(res=>res.json()).then(data=>{
         console.log("this is data mind it",data);
+        alert("Data added successfully!");
+        e.target.reset();
        })
 
      
