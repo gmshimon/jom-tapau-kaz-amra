@@ -93,7 +93,7 @@ const Data_form = () => {
         <br/>
         <button onClick={HandleAdd}>Add Food</button>
       </form>
-      b
+      <p>hello how are you</p>
     </div>
   )
 }
